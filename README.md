@@ -125,3 +125,10 @@ RDP will make your life easier. If Remmina is not working, try this: rdesktop -u
 The tryhackme Kali attack box doesn't have rdestop so I used thsi instead:
 
 xfreerdp /u:CyberLens /p:<password> /v:10.10.179.83:3389
+
+# Exploitation
+
+After looking around for a bit I decided to used the local_exploit_suggester on msfconsole:
+
+
+![msf_recon](https://github.com/user-attachments/assets/7feb893b-a2d4-4d48-82b4-3fada152f410)
