@@ -64,4 +64,12 @@ I ran an nmap scan on port 61777 but it didn't yeild much info.
 
 I'll go ahead and visit the IP on this port.
 
+We get a Tika 1.17 welcome:
 
+![Tika 1 17](https://github.com/user-attachments/assets/a2d37890-2b70-4e02-b44a-12fa96ff247b)
+
+I did a google search for Tika 1.17 exploit, and checked out this Header Command Injection(Metasploit) exploit. 
+
+![Tika 1 17](https://github.com/user-attachments/assets/86ae25c3-fd8e-42c5-b51c-d0a95d884c61)
+
+I'm going to open up msfconsole and search for this exploit.
