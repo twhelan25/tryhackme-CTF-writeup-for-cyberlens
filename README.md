@@ -5,6 +5,15 @@
 
 This is a walkthrough for the tryhackme CTF CyberLens. I will not provide any flags or passwords as this is intended to be used as a guide.
 
+# Challenge Description
+
+![description](https://github.com/user-attachments/assets/5e04f23a-a20b-4455-a22d-55edde6b6ff9)
+
+As per the instructions, let's add the IP to our /etc/hosts file:
+```bash
+sudo echo '10.10.179.83 cyberlens.thm' >> /etc/hosts
+```
+
 Scanning/Reconnaissance
 First off, let's store the target IP as a variable for easy access.
 
