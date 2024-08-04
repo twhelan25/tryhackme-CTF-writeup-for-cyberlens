@@ -72,4 +72,6 @@ I did a google search for Tika 1.17 exploit, and checked out this Header Command
 
 ![Tika 1 17](https://github.com/user-attachments/assets/86ae25c3-fd8e-42c5-b51c-d0a95d884c61)
 
+
+
 I'm going to open up msfconsole and search for this exploit.
