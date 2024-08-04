@@ -106,3 +106,7 @@ meterpreter >
 
 ![meterpreter1](https://github.com/user-attachments/assets/acc264f0-ebee-4d8a-af21-ef4617749a9f)
 
+Now to explore the file system and find the first flag. 
+c:\Users\CyberLens\Desktop>type user.txt
+type user.txt
+
