@@ -106,7 +106,22 @@ meterpreter >
 
 ![meterpreter1](https://github.com/user-attachments/assets/acc264f0-ebee-4d8a-af21-ef4617749a9f)
 
-Now to explore the file system and find the first flag. 
+Now to explore the file system and find the first flag.
+
 c:\Users\CyberLens\Desktop>type user.txt
 type user.txt
 
+I then did more exploring of the cyberlens dir, and came across this password:
+
+c:\Users\CyberLens\Documents\Management>type cyberlens-management.txt
+type cyberlens-management.txt
+Remember, manual enumeration is often key in an engagement ;)
+
+CyberLens
+
+Next, I followed the hint for the root flag:
+
+RDP will make your life easier. If Remmina is not working, try this: rdesktop -u [user] -p [password] -N cyberlens.thm:3389
+The tryhackme Kali attack box doesn't have rdestop so I used thsi instead:
+
+xfreerdp /u:CyberLens /p:<password> /v:10.10.179.83:3389
