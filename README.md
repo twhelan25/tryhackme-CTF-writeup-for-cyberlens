@@ -132,3 +132,11 @@ After looking around for a bit I decided to used the local_exploit_suggester on 
 
 
 ![msf_recon](https://github.com/user-attachments/assets/7feb893b-a2d4-4d48-82b4-3fada152f410)
+
+And the first one looks promising:
+
+![recon results](https://github.com/user-attachments/assets/7944f784-ff09-41d7-9321-c135906bf03d)
+
+![exploited](https://github.com/user-attachments/assets/8423b63f-ccd2-48a0-a6e9-680446221fd4)
+
+And we are now nt authority\system! The admin.txt is on the desktop, just like user.txt was. I hope you enjoyed this CTF!
