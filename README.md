@@ -70,8 +70,8 @@ We get a Tika 1.17 welcome:
 
 I did a google search for Tika 1.17 exploit, and checked out this Header Command Injection(Metasploit) exploit. 
 
-![Tika 1 17](https://github.com/user-attachments/assets/86ae25c3-fd8e-42c5-b51c-d0a95d884c61)
-
-
+![headercommandinjection](https://github.com/user-attachments/assets/39a5d4c3-6ac4-4796-a127-d17c7ce2af2b)
 
 I'm going to open up msfconsole and search for this exploit.
+
+![msf1](https://github.com/user-attachments/assets/3f8fb7e6-7f58-43c6-9ae9-c336b6031038)
